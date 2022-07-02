@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.links{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+}
+.links label{
+    padding: 10px 0;
+    flex-grow: 1;
+    cursor: pointer;
+    transition: all .4s;
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 100%;
+    color: #fff;
+    font-size: 14px;
+}
+.links label:hover{
+    background-color: rgba(255, 255, 255, .2);
+}
+.scroll{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.sections{
+    transition: all .4s;
+}
+input{
+    display: none;
+}
+.bloco{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.imagem_principal{
+    width: 48vw;
+    height: 100vh;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.texto_home{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    padding: 100px;
+    gap: 32px;
+    color: #fff;
+    font-family: 'Arial';
+}
+.home_titulo{
+    border-bottom: 0.6px solid #fff;
+}
+.zoologico{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.texto_zoologico{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    padding: 100px;
+    gap: 32px;
+    color: #fff;
+    font-family: 'Arial';
+}
+.zoologico_titulo{
+    border-bottom: 0.6px solid #fff;
+}
+.imagem_zoologico{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 130px;
+}
+.animais{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.texto_animais{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 48%;
+    padding: 100px;
+    gap: 32px;
+    color: #fff;
+    font-family: 'Arial';
+}
+.animais_titulo{
+    gap: 5px;
+    border-bottom: 0.6px solid #fff;
+}
+.vegetacao{
+    display: flex;
+    align-items: center;
+}
+.texto_vegetacao{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    padding: 100px;
+    gap: 32px;
+    color: #fff;
+    font-family: 'Arial';
+}
+.vegetacao_titulo{
+    border-bottom: 0.6px solid #fff;
+}
+.imagem_vegetacao{
+    width: 250px;
+}
+.localizacao{
+    display: flex;
+    align-items: center;
+}
+.texto_localizacao{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    padding: 90px;
+    gap: 32px;
+    color: #fff;
+    font-family: 'Arial';
+}
+.localizacao_titulo{
+    border-bottom: 0.6px solid #fff;
+}
+.PF{
+    display: flex;
+    align-items: center;
+}
+.texto_PF{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    padding: 100px;
+    gap: 32px;
+    color: #fff;
+    font-family: 'Arial';
+}
+.PF_titulo{
+    border-bottom: 0.6px solid #fff;
+}
+
+#home{
+    background-color: #175e1c;
+}
+#zoologico{
+    background-color: #be975d;
+}
+#animais{
+    background-color: #ff9900;
+}
+#vegetacao{
+    background-color: rgb(12, 56, 145);
+
+}
+#localizacao{
+    background-color: #572f7b;
+}
+#PF{
+    background-color: #414950;
+}
+#rd_zoologico:checked ~ .sections{
+    margin-top: -100vh;
+}
+#rd_animais:checked ~ .sections{
+    margin-top: -200vh;
+}
+#rd_vegetacao:checked ~ .sections{
+    margin-top: -300vh;
+}
+#rd_localizacao:checked ~ .sections{
+    margin-top: -400vh;
+}
+#rd_PF:checked ~ .sections{
+    margin-top: -500vh;
+}
+
